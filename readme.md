@@ -10,9 +10,9 @@ basic link : https://central.sonatype.org/publish/publish-maven/#performing-a-re
 
 #### 저장소
 
-- 소나타입 : https://s01.oss.sonatype.org/content/repositories/snapshots/io/github/giggals-s-people/maven_sample_for_repository/
+- 소나타입 : https://s01.oss.sonatype.org/#welcome 에서 giggal 검색 
 
--
+- 메이븐 : 
 
 #### Known Errors
 
@@ -25,3 +25,9 @@ basic link : https://central.sonatype.org/publish/publish-maven/#performing-a-re
 3) error : 중복된 버전에 대한 배포  
    (Artifact updating: Repository ='releases:Releases' does not allow updating artifact=)
 - https://issues.sonatype.org/browse/OSSRH-67896
+
+
+#### 주의 사항
+
+1) ossrh의 자료가 maven central에 표시되기까지 1-2 시간 걸릴수도 있음
+   : https://issues.sonatype.org/browse/OSSRH-27080
