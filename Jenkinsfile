@@ -7,9 +7,9 @@ node {
     if(env.BRANCH_NAME==~ /^PR-\d+$/){
         withSonarQubeEnv('sonar'){
             sh "${mvn}/bin/mvn sonar:sonar" +
-            "-Dsonar.pullrequest.key=$CHANGE_ID " +
-            "-Dsonar.pullrequest.branch=$CHANGE_BRANCH " +
-            "-Dsonar.pullrequest.base=$CHANGE_TARGET"
+            " -Dsonar.pullrequest.key=$CHANGE_ID" +
+            " -Dsonar.pullrequest.branch=$CHANGE_BRANCH" +
+            " -Dsonar.pullrequest.base=$CHANGE_TARGET"
 
         }
     }else {
